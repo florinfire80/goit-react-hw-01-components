@@ -1,0 +1,61 @@
+.profile {
+  background-color: #fff;
+  width: 300px;
+  height: 350px;
+  padding-top: 50px;
+  margin-bottom: 0;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 10px 10px 8px #888888;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.descriptionAvatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: wheat;
+  padding: 10px;
+}
+.descriptionName {
+  font-size: x-large;
+  font-weight: 700;
+  margin: 10px;
+}
+.descriptionTag,
+.descriptionLocation {
+  font-weight: 600;
+  color: rgba(44, 44, 43, 0.819);
+  opacity: 0.5;
+}
+.descriptionLocation {
+  margin-bottom: 25px;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+.stats li {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background-color: #e2dfdf;
+  border: 1px solid rgb(208, 206, 206);
+  border-radius: 5px;
+}
+.statsLabel {
+  font-weight: 400;
+  color: rgba(44, 44, 43, 0.819);
+  opacity: 0.5;
+}
+.statsQuantity {
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+}
