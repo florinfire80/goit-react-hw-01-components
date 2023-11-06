@@ -1,20 +1,7 @@
-import React, { useState, useEffect } from 'react';
 import data from './data.json';
 import styles from './Statistics.module.css';
 
 const Statistics = ({ title }) => {
-  const [randomColor, setRandomColor] = useState(generateRandomColor());
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setRandomColor(generateRandomColor());
-    }, 5000);
-
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, []);
-
   function generateRandomColor() {
     const letters = '0123456789ABCDEF';
     let color = '#';
@@ -39,7 +26,7 @@ const Statistics = ({ title }) => {
             <span className={styles.statisticsStatLabel}>{item.label}</span>
             <br />
             <span className={styles.statisticsStatPercentage}>
-              {item.percentage}%
+              {item.percentage} %
             </span>
           </li>
         ))}
